@@ -7,10 +7,14 @@ import {
   ShoppingCartSvgIcon,
   TimerSvgIcon,
 } from './styles'
-import bannerimage from '../../assets/images/banner-image.svg'
+import bannerimage from '../../../assets/images/banner-image.svg'
 import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
+// import { useContext } from 'react'
+// import { CoffeeContext } from '../../../contexts/CoffeeContext'
 
 export function Banner() {
+  // const { CoffeeCatalog } = useContext(CoffeeContext)
+
   return (
     <BannerContainer>
       <BannerText>
