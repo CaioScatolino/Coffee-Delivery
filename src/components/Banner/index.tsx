@@ -1,4 +1,12 @@
-import { BannerContainer, BannerImage, BannerText } from './styles'
+import {
+  BannerContainer,
+  BannerImage,
+  BannerText,
+  CoffeeSvgIcon,
+  PackageSvgIcon,
+  ShoppingCartSvgIcon,
+  TimerSvgIcon,
+} from './styles'
 import bannerimage from '../../assets/images/banner-image.svg'
 import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
 
@@ -14,19 +22,30 @@ export function Banner() {
 
         <span>
           <p>
-            <ShoppingCart /> Compra simples e segura
+            <ShoppingCartSvgIcon>
+              <ShoppingCart size={16} weight="fill" />
+            </ShoppingCartSvgIcon>{' '}
+            Compra simples e segura
           </p>
           <p>
-            <Package /> Embalagem mantém o café intacto
+            <PackageSvgIcon>
+              <Package size={16} weight="fill" />
+            </PackageSvgIcon>{' '}
+            Embalagem mantém o café intacto
           </p>
         </span>
         <span>
           <p>
-            <Timer />
+            <TimerSvgIcon>
+              <Timer size={16} weight="fill" />
+            </TimerSvgIcon>
             Entrega rápida e rastreada
           </p>
           <p>
-            <Coffee /> O café chega fresquinho até você
+            <CoffeeSvgIcon>
+              <Coffee size={16} weight="fill" />
+            </CoffeeSvgIcon>
+            O café chega fresquinho até você
           </p>
         </span>
       </BannerText>

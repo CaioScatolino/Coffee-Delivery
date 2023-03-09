@@ -17,29 +17,48 @@ export const BannerText = styled.div`
   align-items: center;
   line-height: 1.3;
 
-  p {
+  & > p {
+    width: 100%;
     margin-bottom: 4.125rem;
   }
 
   span {
     display: flex;
     width: 100%;
-    gap: 1rem;
 
     p {
+      width: 100%;
       word-wrap: break-word;
       display: flex;
-      justify-content: space-around;
       align-items: center;
-      font-size: 0.875rem;
-
-      svg {
-        color: ${props => props.theme['yellow-dark']};
-      }
+      font-size: 1rem;
+      gap: 6px;
     }
   }
 `
 
 export const BannerImage = styled.img`
   width: 50%;
+`
+
+export const BaseIcon = styled.div`
+  color: ${(props) => props.theme.white};
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 99999px;
+`
+
+export const ShoppingCartSvgIcon = styled(BaseIcon)`
+  background-color: ${(props) => props.theme['yellow-dark']};
+`
+export const CoffeeSvgIcon = styled(BaseIcon)`
+  background-color: ${(props) => props.theme.puprle};
+`
+export const TimerSvgIcon = styled(BaseIcon)`
+  background-color: ${(props) => props.theme.yellow};
+`
+export const PackageSvgIcon = styled(BaseIcon)`
+  background-color: ${(props) => props.theme['base-text']};
 `
