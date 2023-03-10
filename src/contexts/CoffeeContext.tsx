@@ -1,4 +1,5 @@
 import { createContext, ReactNode } from 'react'
+import capuccino from '../assets/images/coffees/capuccino.svg'
 
 interface CoffeeProps {
   id: number
@@ -26,7 +27,7 @@ export function CoffeeContextProvider({
   const CoffeeCatalog: CoffeeProps[] = [
     {
       id: 1,
-      image: '../src/assets/images/coffees/expresso-americano.svg',
+      image: capuccino,
       tag: ['Tradicional'],
       title: 'Expresso Tradicional',
       description: 'O tradicional café feito com água quente e grãos moídos',
