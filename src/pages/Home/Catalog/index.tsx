@@ -2,6 +2,7 @@ import { ShoppingCartSimple } from 'phosphor-react'
 import { useContext } from 'react'
 import { CoffeeContext } from '../../../contexts/CoffeeContext'
 import { CatalogContainer, CoffeeItem, CoffeeTag } from './style'
+import { NumericFormat } from 'react-number-format'
 
 export function Catalog() {
   const { CoffeeCatalog } = useContext(CoffeeContext)
@@ -25,7 +26,14 @@ export function Catalog() {
               <h4>{coffee.title}</h4>
               <p>{coffee.description}</p>
               <div>
-                <span>R$ {coffee.price}</span>
+                <span>
+                  <NumericFormat
+                    value={coffee.price.toFixed(2)}
+                    displayType={'text'}
+                    prefix={'R$'}
+                    thousandSeparator={true}
+                  />
+                </span>
                 <form action="">
                   <input type="number" />
 
