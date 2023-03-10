@@ -1,4 +1,4 @@
-import { CurrencyCircleDollar, ShoppingCartSimple } from 'phosphor-react'
+import { ShoppingCartSimple } from 'phosphor-react'
 import { useContext } from 'react'
 import { CoffeeContext } from '../../../contexts/CoffeeContext'
 import { CatalogContainer, CoffeeItem, CoffeeTag } from './style'
