@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 
 export const BannerContainer = styled.div`
-  width: 100%;
+  flex: 1;
   display: flex;
   flex-direction: row;
   padding: 2rem 0;
+  gap: 3.5rem;
 `
 
 export const BannerText = styled.div`
@@ -23,8 +24,9 @@ export const BannerText = styled.div`
   }
 
   span {
-    display: flex;
+    display: grid;
     width: 100%;
+    grid-template-columns: 1fr 1fr;
 
     p {
       width: 100%;
@@ -35,10 +37,20 @@ export const BannerText = styled.div`
       gap: 6px;
     }
   }
+
+  h1 {
+    font-family: 'Baloo 2', cursive;
+    font-weight: 900;
+    color: ${(props) => props.theme['base-title']};
+  }
 `
 
 export const BannerImage = styled.img`
   width: 50%;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 export const BaseIcon = styled.div`

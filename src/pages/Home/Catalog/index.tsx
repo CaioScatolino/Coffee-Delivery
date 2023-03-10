@@ -1,7 +1,7 @@
-import { ShoppingCartSimple } from 'phosphor-react'
+import { CurrencyCircleDollar, ShoppingCartSimple } from 'phosphor-react'
 import { useContext } from 'react'
 import { CoffeeContext } from '../../../contexts/CoffeeContext'
-import { CatalogContainer, CoffeeItem } from './style'
+import { CatalogContainer, CoffeeItem, CoffeeTag } from './style'
 
 export function Catalog() {
   const { CoffeeCatalog } = useContext(CoffeeContext)
@@ -14,17 +14,21 @@ export function Catalog() {
         {CoffeeCatalog.map((coffee) => {
           return (
             <CoffeeItem key={coffee.id}>
-              <p>{coffee.image}</p>
-              <h5>
-                {coffee.tag[0]} {coffee.tag[1]} {coffee.tag[2]}
-              </h5>
+              <img src={coffee.image} alt=""></img>
+              <CoffeeTag>
+                {coffee.tag[0] && <h5>{coffee.tag[0]}</h5>}
+
+                {coffee.tag[1] && <h5>{coffee.tag[1]}</h5>}
+
+                {coffee.tag[2] && <h5>{coffee.tag[2]}</h5>}
+              </CoffeeTag>
               <h4>{coffee.title}</h4>
               <p>{coffee.description}</p>
               <div>
+                <span>R$ {coffee.price}</span>
                 <form action="">
-                  {' '}
-                  <label>R$ {coffee.price}</label>
                   <input type="number" />
+
                   <button type="submit">
                     <ShoppingCartSimple size={22} />
                   </button>

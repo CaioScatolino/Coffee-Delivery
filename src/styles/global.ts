@@ -25,7 +25,6 @@ body, input, textarea, button {
 }
 
 header {
-    color: ${(props) => props.theme['puprle-dark']};
     font-size: 1.125rem;
 }
 

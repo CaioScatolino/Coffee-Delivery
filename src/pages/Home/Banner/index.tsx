@@ -37,8 +37,6 @@ export function Banner() {
             </PackageSvgIcon>{' '}
             Embalagem mantém o café intacto
           </p>
-        </span>
-        <span>
           <p>
             <TimerSvgIcon>
               <Timer size={16} weight="fill" />

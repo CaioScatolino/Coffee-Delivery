@@ -26,7 +26,7 @@ export function CoffeeContextProvider({
   const CoffeeCatalog: CoffeeProps[] = [
     {
       id: 1,
-      image: 'foto',
+      image: 'src/assets/images/coffees/expresso-americano.svg',
       tag: ['Tradicional'],
       title: 'Expresso Tradicional',
       description: 'O tradicional café feito com água quente e grãos moídos',
@@ -36,7 +36,7 @@ export function CoffeeContextProvider({
     },
     {
       id: 2,
-      image: 'foto',
+      image: 'src/assets/images/coffees/expresso-americano.svg',
       tag: ['Tradicional', 'Com leite'],
       title: 'Expresso',
       description: 'O tradicional café feito com água quente e grãos moídos',
@@ -46,7 +46,7 @@ export function CoffeeContextProvider({
     },
     {
       id: 3,
-      image: 'foto',
+      image: 'src/assets/images/coffees/expresso-americano.svg',
       tag: ['Tradicional', 'Com leite'],
       title: 'Expresso',
       description: 'O tradicional café feito com água quente e grãos moídos',
@@ -56,7 +56,7 @@ export function CoffeeContextProvider({
     },
     {
       id: 4,
-      image: 'foto',
+      image: 'src/assets/images/coffees/expresso-americano.svg',
       tag: ['Tradicional', 'Com leite'],
       title: 'Expresso',
       description: 'O tradicional café feito com água quente e grãos moídos',
@@ -66,8 +66,8 @@ export function CoffeeContextProvider({
     },
     {
       id: 5,
-      image: 'foto',
-      tag: ['Tradicional', 'Com leite'],
+      image: 'src/assets/images/coffees/expresso-americano.svg',
+      tag: ['Tradicional', 'Com leite', 'Amargo'],
       title: 'Expresso',
       description: 'O tradicional café feito com água quente e grãos moídos',
       price: 9.9,
