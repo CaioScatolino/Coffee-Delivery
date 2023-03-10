@@ -1,5 +1,6 @@
 import { createContext, ReactNode } from 'react'
 import capuccino from '../assets/images/coffees/capuccino.svg'
+import comleite from '../assets/images/coffees/com-leite.svg'
 
 interface CoffeeProps {
   id: number
