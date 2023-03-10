@@ -21,11 +21,14 @@ export function Catalog() {
               <h4>{coffee.title}</h4>
               <p>{coffee.description}</p>
               <div>
-                <span>R$ {coffee.price}</span>
-                <input type="number" />
-                <button type="submit">
-                  <ShoppingCartSimple size={22} />
-                </button>
+                <form action="">
+                  {' '}
+                  <label>R$ {coffee.price}</label>
+                  <input type="number" />
+                  <button type="submit">
+                    <ShoppingCartSimple size={22} />
+                  </button>
+                </form>
               </div>
             </CoffeeItem>
           )
